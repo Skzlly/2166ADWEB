@@ -1,0 +1,179 @@
+<body>
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container px-4 px-lg-5">
+          <a class="navbar-brand" href="#!">Start Bootstrap</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                  <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#!">All Products</a></li>
+                          <li><hr class="dropdown-divider" /></li>
+                          <li><a class="dropdown-item" href="#!">Popular Items</a></li>
+                          <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
+                      </ul>
+                  </li>
+              </ul>
+              <form class="d-flex">
+                  <button (click)="resetClickCount()"class="btn btn-outline-dark" type="submit" >
+                      <i class="bi-cart-fill me-1"></i>
+                      Cart
+                      <span class="badge bg-dark text-white ms-1 rounded-pill">{{ clickCount }}</span>
+                  </button>
+              </form>
+          </div>
+      </div>
+  </nav>
+  <!-- Header-->
+<header class="bg-dark py-5">
+  <div class="container px-4 px-lg-5 my-5">
+      <div class="text-center text-white">
+          <h1 class="display-4 fw-bolder">Veentage Tis</h1>
+          <p class="lead fw-normal text-white-50 mb-0">Thrift Metallica Shirts</p>
+      </div>
+  </div>
+</header>
+  <!-- Product section-->
+  <section class="py-5">
+      <div class="container px-4 px-lg-5 my-5">
+          <div class="row gx-4 gx-lg-5 align-items-center">
+              <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="https://i.ebayimg.com/images/g/QtsAAOSwtOdjlkoG/s-l1200.webp" alt="..." /></div>
+              <div class="col-md-6">
+                  
+                  
+                  <h1 class="display-5 fw-bolder">{{Shirt1}}</h1>
+                  <div class="fs-5 mb-5">
+                      <span class="text-decoration-line-through">$80.00</span>
+                      <span> $499.99</span>
+                  </div>
+                  <p class="lead">Introducing the Vintage 1991 Metallica Band T-shirt by Wild Oats, a timeless piece that effortlessly merges classic style with iconic rock vibes. This shirt pays homage to the legendary year of 1991, a pivotal era in the history of Metallica and the global rock scene. The all-over print design captures the essence of the band's raw energy and rebellious spirit, showcasing intricate details that bring their music to life visually.
+                    Crafted with the finest materials, this vintage-inspired tee boasts a soft, comfortable feel that only improves with each wear, offering a genuine and lived-in look. The Wild Oats touch adds a unique flair, ensuring that every inch of the shirt tells a story. The bold, vivid graphics transport you back to the heyday of Metallica, featuring the band's unmistakable logo, album artwork, and an array of artistic elements that celebrate the essence of their music.
+                  </p>
+                  <div class="d-flex">
+                      
+                      <button class="btn btn-outline-dark flex-shrink-0" type="button" (click)="clickMe()"> Add to cart</button>
+                
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- Related items section-->
+  <section class="py-5 bg-light">
+      <div class="container px-4 px-lg-5 mt-5">
+          <h2 class="fw-bolder mb-4">Other Thrifted Items</h2>
+          <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+              <div class="col mb-5">
+                  <div class="card h-100">
+                      <!-- Product image-->
+                      <img class="card-img-top" src="https://www.cqydenim.com/cdn/shop/products/2002VIN047_front_1024x.progressive.jpg?v=1633835283" alt="..." />
+                      <!-- Product details-->
+                      <div class="card-body p-4">
+                          <div class="text-center">
+                              <!-- Product name-->
+                              <h5 class="fw-bolder">Vintage Metallica Ride The Lightning</h5>
+                              <!-- Product price-->
+                              $80.00 - $120.00
+                          </div>
+                      </div>
+                      <!-- Product actions-->
+                      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <button class="btn btn-outline-dark flex-shrink-0" type="button" (click)="clickMe()"> Add to cart</button>
+                    </div>
+                  </div>
+              </div>
+              <div class="col mb-5">
+                  <div class="card h-100">
+                      <!-- Sale badge-->
+                      <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                      <!-- Product image-->
+                      <img class="card-img-top" src="https://www.shopsaturnreturn.com/cdn/shop/products/imagejpg_b0544aeb-d8c8-4779-ac6e-e0e7485402eb_1500x.jpg?v=1575458825" alt="..." />
+                      <!-- Product details-->
+                      <div class="card-body p-4">
+                          <div class="text-center">
+                              <!-- Product name-->
+                              <h5 class="fw-bolder">Vintage 80s Metallica Master Of Puppets Tee</h5>
+                              <!-- Product reviews-->
+                              <div class="d-flex justify-content-center small text-warning mb-2">
+                                  <div class="bi-star-fill"></div>
+                                  <div class="bi-star-fill"></div>
+                                  <div class="bi-star-fill"></div>
+                                  <div class="bi-star-fill"></div>
+                                  <div class="bi-star-fill"></div>
+                              </div>
+                              <!-- Product price-->
+                              <span class="text-muted text-decoration-line-through">$40.00</span>
+                              $180.00
+                          </div>
+                      </div>
+                      <!-- Product actions-->
+                      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <button class="btn btn-outline-dark flex-shrink-0" type="button" (click)="clickMe()"> Add to cart</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="col mb-5">
+                  <div class="card h-100">
+                      <!-- Sale badge-->
+                      <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                      <!-- Product image-->
+                      <img class="card-img-top" src="https://www.cqydenim.com/cdn/shop/products/2002VIN050_front_1024x.progressive.jpg?v=1633835510" alt="..." />
+                      <!-- Product details-->
+                      <div class="card-body p-4">
+                          <div class="text-center">
+                              <!-- Product name-->
+                              <h5 class="fw-bolder">Vintage 80s Metallica And Justice For All</h5>
+                              <!-- Product price-->
+                              <span class="text-muted text-decoration-line-through">$250.00</span>
+                              $130.00
+                          </div>
+                      </div>
+                      <!-- Product actions-->
+                      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <button class="btn btn-outline-dark flex-shrink-0" type="button" (click)="clickMe()"> Add to cart</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="col mb-5">
+                  <div class="card h-100">
+                      <!-- Product image-->
+                      <img class="card-img-top" src="https://media.karousell.com/media/photos/products/2023/9/3/2007_metallica_doris_faded_vin_1693702848_0f32254f_progressive.jpg" alt="..." />
+                      <!-- Product details-->
+                      <div class="card-body p-4">
+                          <div class="text-center">
+                              <!-- Product name-->
+                              <h5 class="fw-bolder">2007 Metallica Doris Faded Vintage Shirt</h5>
+                              <!-- Product reviews-->
+                              <div class="d-flex justify-content-center small text-warning mb-2">
+                                  <div class="bi-star-fill"></div>
+                                  <div class="bi-star-fill"></div>
+                                  <div class="bi-star-fill"></div>
+                                  <div class="bi-star-fill"></div>
+                                  <div class="bi-star-fill"></div>
+                              </div>
+                              <!-- Product price-->
+                              $65.00
+                          </div>
+                      </div>
+                      <!-- Product actions-->
+                      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <button class="btn btn-outline-dark flex-shrink-0" type="button" (click)="clickMe()"> Add to cart</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- Footer-->
+  <footer class="py-5 bg-dark">
+      <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
+  </footer>
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Core theme JS-->
+  <script src="js/scripts.js"></script>
+</body>
